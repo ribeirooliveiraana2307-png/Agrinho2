@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Unificado</title>
+    
+    <!-- O código CSS entra aqui -->
+    <style>
+        /* Configurações Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 3px solid #00adb5;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00adb5;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+        }
+
+        /* Botão Estilizado */
+        button {
+            background-color: #00adb5;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #007c82;
+        }
+
+        .contador-texto {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+
+        #contador {
+            color: #00adb5;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Estrutura HTML -->
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>HTML, CSS e JavaScript juntos em um único arquivo!</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Interatividade em Ação</h2>
+            <p>Clique no botão abaixo para testar a função do JavaScript.</p>
+            <button id="botao-clique">Clique aqui!</button>
+            <p class="contador-texto">Cliques: <span id="contador">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- O código JavaScript entra aqui -->
+    <script>
+        // Seleciona os elementos do HTML usando o ID
+        const botao = document.getElementById('botao-clique');
+        const contadorExibicao = document.getElementById('contador');
+
+        // Inicializa a variável do contador
+        let totalCliques = 0;
+
+        // Adiciona um evento de clique ao botão
+        botao.addEventListener('click', () => {
+            totalCliques++; 
+            contadorExibicao.textContent = totalCliques; 
+        });
+    </script>
+</body>
+</html>
