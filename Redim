@@ -1,0 +1,198 @@
+Modo IA
+Tudo
+Imagens
+Vídeos
+Notícias
+Mais
+
+
+
+
+crie um site com HTMI css e javaescript
+Para criar um site funcional, você precisa dividir seu projeto em três arquivos principais: index.html (para a estrutura), style.css (para o visual) e script.js (para a interatividade).
+Abaixo está o código completo de um site moderno com tema escuro e um botão interativo que conta os cliques.
+1. Estrutura (index.html)
+Crie um arquivo com este nome e cole o código que define os textos, o botão e os links do site.
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Criado dinamicamente com HTML, CSS e JavaScript.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Interatividade em Ação</h2>
+            <p>Clique no botão abaixo para testar a função do JavaScript.</p>
+            <button id="botao-clique">Clique aqui!</button>
+            <p class="contador-texto">Cliques: <span id="contador">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+Use o código com cuidado.
+2. Estilo (style.css)
+Crie um arquivo chamado style.css na mesma pasta para aplicar o design visual e as cores.
+css
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid #00adb5;
+}
+
+header h1 {
+    margin: 0;
+    color: #00adb5;
+}
+
+/* Conteúdo Principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+/* Botão Estilizado */
+button {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #007c82;
+}
+
+.contador-texto {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+#contador {
+    color: #00adb5;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+}
+Use o código com cuidado.
+3. Comportamento (script.js)
+Crie o arquivo script.js para escutar o clique do usuário e atualizar a tela em tempo real.
+javascript
+// Seleciona os elementos do HTML usando o ID
+const botao = document.getElementById('botao-clique');
+const contadorExibicao = document.getElementById('contador');
+
+// Inicializa a variável do contador
+let totalCliques = 0;
+
+// Adiciona um evento de clique ao botão
+botao.addEventListener('click', () => {
+    totalCliques++; 
+    contadorExibicao.textContent = totalCliques; 
+});
+Use o código com cuidado.
+Como testar no seu computador
+Abra um editor de código como o Visual Studio Code.
+Crie uma nova pasta no seu computador.
+Salve os três arquivos acima dentro dessa mesma pasta, com os nomes exatos fornecidos.
+Dê um duplo clique no arquivo index.html para abri-lo diretamente no seu navegador de internet.
+Se precisar evoluir seu projeto, você pode buscar por cursos práticos na plataforma da Escola do Trabalhador 4.0 ou tutoriais avançados no YouTube.
+Me diga qual é o objetivo do seu site (portfólio, blog, comércio) para que eu possa te ajudar a criar as próximas seções ou adicionar novos recursos específicos.
+As respostas da IA podem conter erros. Saiba mais
+
+
+
+
+
+
+5 sites
+Crie um site simples usando HTML, CSS e JavaScript
+Crie um site simples usando HTML, CSS e JavaScript. Duração 02h. Nível Iniciante. Compartilhar Favoritar. Neste curso, você terá a...
+
+
+Fundação Bradesco
+Curso "Crie um Site Simples Usando HTML, CSS e JavaScript ...
+Saiba mais sobre o curso ""Crie um Site Simples Usando HTML, CSS e JavaScript"" da Trilha de ""Introdução à Programação"" da Escol...
+
+4:59
+
+YouTube
+·
+Microsoft Reactor
+Como Fazer um SITE DO ZERO com HTML E CSS PASSO ...
+O processo completo de construção de um site, desde a configuração inicial do ambiente de desenvolvimento até a criação da estrutu...
+
+1:16:28
+
+YouTube
+·
+Matheus Manuel
+Mostrar tudo
+fale um pouco sobre o site que voce criou
+Este site foi projetado para ser um modelo de aprendizado prático e moderno. Ele serve como base ideal para quem está começando na programação, pois une simplicidade de código com uma aparência profissional.
+Aqui estão as principais características do que foi construído:
+🌟 Design Moderno e Responsivo
+Visual Dark Mode: Utiliza uma paleta de cores escuras (grafite e preto) com detalhes em ciano (#00adb5). Esse estilo é altamente popular, cansa menos os olhos e dá um toque tecnológico.
+Layout Fluido: O uso de Flexbox no CSS garante que o conteúdo fique perfeitamente centralizado. O rodapé se mantém sempre na parte inferior da tela, independentemente do tamanho do monitor.
+Efeitos de Transição: O botão muda de cor suavemente quando você passa o mouse por cima (hover), melhorando a experiência visual.
+⚙️ Lógica de Programação na Prática
+Manipulação do DOM: O JavaScript se conecta diretamente ao HTML para capturar o momento exato em que o usuário interage com a página.
+Estado Dinâmico: O script armazena uma informação na memória (a quantidade de cliques) e atualiza o texto da tela instantaneamente, sem que a página precise ser atualizada ou recarregada.
+🏗️ Separação Clara de Responsabilidades
+O projeto segue o padrão recomendado pelo mercado de desenvolvimento web:
+HTML cuida exclusivamente do esqueleto (o que aparece na tela).
+CSS cuida exclusivamente da maquiagem (as cores, fontes e posicionamento).
+JavaScript cuida exclusivamente do cérebro (o comportamento e a ação).
